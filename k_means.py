@@ -13,6 +13,8 @@ iris = pd.read_csv('./Iris.csv', usecols=['SepalLengthCm', 'SepalWidthCm', 'Peta
 print(iris.head())
 print(iris.info())
 sns.pairplot(iris, hue='Species')
+#Desenha um gráfico de dispersão para explorar visualmente os dados antes de aplicar K-Means.
+#Porém aqui está separando por classes, o que não é utilizado pelo K-means. 
 plt.show()
 
 #Aqui separa apenas duas dimensões dos dados.
